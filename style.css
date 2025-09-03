@@ -24,12 +24,37 @@ nav div ul li a{
     font-size: x-large;
     font-weight: 400;
 }
-#home, .img{
+#main_page{
+    overflow: hidden;
+}
+.row{
     display: inline-block;
 }
 .img{
     float: right;
     position: absolute;
-    left: 40%;
+    left: 35%;
     bottom: 0;
+}
+.book-row{
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 200%;
+    animation-name: animate;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.book-item{
+    display: inline-block;
+}
+.book-item img{
+    width: 120px;
+    height: auto;
+    padding: 5px;
+}
+@keyframes animate{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(50%);}
 }
