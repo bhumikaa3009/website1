@@ -40,9 +40,9 @@ nav div ul li a{
     position: relative;
     margin-top: 100px;
     overflow: hidden;
-    width: 200%;
+    width: 160%;
     animation-name: animate;
-    animation-duration: 20s;
+    animation-duration: 16s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -50,11 +50,33 @@ nav div ul li a{
     display: inline-block;
 }
 .book-item img{
-    width: 120px;
+    width: 160px;
     height: auto;
     padding: 5px;
 }
 @keyframes animate{
-    0% {transform: translateX(0);}
+    0% {transform: translateX(0%);}
     100% {transform: translateX(50%);}
+}
+.book-row-second{
+    position: relative;
+    margin-top: 40px;
+    width: 220%;
+    animation-name: animate-second;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+.book-item-second{
+    display: inline-block;
+}
+.book-item-second img{
+    width: 220px;
+    height: auto;
+    padding: 5px;
+}
+@keyframes animate-second{
+    0% {transform: translateX(5%);}
+    100%{transform: translateX(-55%);}
 }
